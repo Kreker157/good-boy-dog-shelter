@@ -1,0 +1,22 @@
+{
+  "footer.about": "About us",
+  "footer.contact": "Contact",
+  "contact.title": "Contact",
+  "loading": "Loading...",
+  "back": "Back",
+  "submit": "Submit",
+  "contact.card.altEmail": "Email icon",
+  "contact.card.titleEmail": "Email",
+  "contact.card.descEmail": "Our friendly team is here to help.",
+  "contact.card.highlightEmail": "hello@goodrequest.com",
+  "contact.card.altOffice": "Office icon",
+  "contact.card.titleOffice": "Office",
+  "contact.card.descOffice": "Come say hello at our office HQ.",
+  "contact.card.highlightOffice": "Obchodná 3D, 010 08 Žilina, Slovakia",
+  "contact.card.altPhone": "Phone icon",
+  "contact.card.titlePhone": "Phone",
+  "contact.card.descPhone": "Mon-Fri from 8am to 5pm.",
+  "contact.card.highlightPhone": "+421 911 750 750",
+  "about.donation.amount": "Total value collected",
+  "about.donation.donor": "Number of donors"
+}

@@ -1,0 +1,22 @@
+{
+  "footer.about": "O projekte",
+  "footer.contact": "Kontakt",
+  "contact.title": "Kontakt",
+  "loading": "Načítavám...",
+  "back": "Späť",
+  "submit": "Odoslať",
+  "contact.card.altEmail": "Ikonka Emailu",
+  "contact.card.titleEmail": "Email",
+  "contact.card.descEmail": "Náš přátelský tým je tu, aby vám pomohl.",
+  "contact.card.highlightEmail": "hello@goodrequest.com",
+  "contact.card.altOffice": "Ikonka kancelárie",
+  "contact.card.titleOffice": "Kancelária",
+  "contact.card.descOffice": "Priďte se pozdravit do našeho kancelářského HQ.",
+  "contact.card.highlightOffice": "Obchodná 3D, 010 08 Žilina, Slovakia",
+  "contact.card.altPhone": "Ikonka telefonu",
+  "contact.card.titlePhone": "Telefón",
+  "contact.card.descPhone": "Po-Pá od 8:00 do 17:00.",
+  "contact.card.highlightPhone": "+421 911 750 750",
+  "about.donation.amount": "Celková vyzbieraná hodnota",
+  "about.donation.donor": "Počet darcov"
+}
