@@ -1,3 +1,5 @@
+'use client';
+import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 
 const ErrorText = styled.span`
@@ -6,5 +8,6 @@ const ErrorText = styled.span`
 `;
 
 export const FieldError = ({ error }: { error?: string }) => {
-  return <ErrorText>{error}</ErrorText>;
+  const { t } = useTranslation();
+  return <ErrorText>{error ? t(error) : ''}</ErrorText>;
 };
