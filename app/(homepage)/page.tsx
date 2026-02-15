@@ -1,5 +1,12 @@
-function page() {
-  return <div>Form there</div>;
-}
+'use client';
 
-export default page;
+import { DonationFlow } from './components/donation/DonationFlow';
+import { DonationFlowProvider } from './components/donation/state/DonationFlowContext';
+
+export default function Page() {
+  return (
+    <DonationFlowProvider>
+      <DonationFlow />
+    </DonationFlowProvider>
+  );
+}

@@ -14,8 +14,14 @@ const Container = styled.div`
 `;
 
 const FormSide = styled.div`
-  padding: 80px 0 80px 60px;
+  padding: 40px 0;
   background: var(--background);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (max-width: 1024px) {
+  padding:  0;
 `;
 
 const ImageSide = styled.div`
@@ -23,6 +29,10 @@ const ImageSide = styled.div`
   align-items: center;
   justify-content: center;
   padding: 16px 8px 16px 56px;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `;
 
 export default function FormLayout({
