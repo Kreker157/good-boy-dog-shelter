@@ -2,9 +2,9 @@ import styled from 'styled-components';
 import { ButtonHTMLAttributes } from 'react';
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant: Variant;
-  fullWidth: boolean;
-  size: Size;
+  variant?: Variant;
+  fullWidth?: boolean;
+  size?: Size;
   children: React.ReactNode;
 }
 
@@ -16,19 +16,19 @@ const StyledButton = styled.button<{
   $fullWidth?: boolean;
   $size?: Size;
 }>`
-  border-radius: 16px;
+  border-radius: 8px;
   font-weight: 500;
   width: ${({ $fullWidth }) => ($fullWidth ? '100%' : 'auto')};
-
+  border: none;
+  cursor: pointer;
   ${({ $variant }) =>
     $variant === 'primary'
       ? `
     background-color: var(--primary);
-    color: var(--primary-text);`
+    color: var(--text-primary);`
       : `
     background-color: var(--secondary);
-    color: var(--secondary-text);`}
-
+    color: var(--text-secondary);`}
   ${({ $size }) => {
     switch ($size) {
       case 'xl':
@@ -58,7 +58,7 @@ const StyledButton = styled.button<{
       default:
         return '';
     }
-  }}
+  }};
 `;
 
 export const Button = ({

@@ -15,15 +15,30 @@ const StyledInput = styled.input<{ $error?: boolean }>`
   padding: 16px 8px;
   border-radius: 16px;
   background: var(--secondary);
-  transition: 0.2s ease;
+  border: 1px solid ${({ $error }) => ($error ? 'var(--error)' : 'transparent')};
+  color: var(--text-secondary);
+  font-size: 16px;
+  font-weight: 500;
 
   &:focus {
     outline: none;
-    border-color: ${({ $error }) => ($error ? 'var(--error)' : 'transparent')};
+    border-color: ${({ $error }) =>
+      $error ? 'var(--error)' : 'var(--primary)'};
   }
 
   &::placeholder {
     color: var(--placeholder);
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &[type='number'] {
+    -moz-appearance: textfield;
+  }
+  &[type='number']::-webkit-outer-spin-button,
+  &[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
   }
 `;
 

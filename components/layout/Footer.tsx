@@ -9,6 +9,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
   border-top: 1px solid var(--border);
   padding-top: 24px;
+  margin-top: 48px;
 `;
 
 const ContentWrapper = styled.div`
