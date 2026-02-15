@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Geist, Inter } from 'next/font/google';
 import I18nProvider from '@/i18n/I18nProvider';
+import QueryProvider from '@/components/providers/QueryProvider';
 import './globals.css';
 import '@/i18n/config';
 
@@ -24,7 +25,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable}${geistSans.variable}`}>
-        <I18nProvider>{children}</I18nProvider>
+        <QueryProvider>
+          <I18nProvider>{children}</I18nProvider>
+        </QueryProvider>
       </body>
     </html>
   );
