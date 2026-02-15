@@ -32,7 +32,7 @@ const Spinner = styled.div`
 
 const LoadingText = styled.p`
   margin-top: 16px;
-  color: var(secondary-text);
+  color: var(--text-secondary);
   font-size: 14px;
 `;
 
